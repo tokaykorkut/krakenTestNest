@@ -3,7 +3,7 @@ import { OutageService } from './outage.service';
 import { OutageController } from './outage.controller';
 
 @Module({
-  controllers: [OutageController],
-  providers: [OutageService],
+    controllers: [OutageController],
+    providers: [OutageService],
 })
 export class OutageModule {}
