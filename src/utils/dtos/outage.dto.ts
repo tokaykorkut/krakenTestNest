@@ -5,8 +5,8 @@ export class OutageDto {
     id!: string;
 
     @IsDateString()
-    begin!: Date;
+    begin!: string;
 
     @IsDateString()
-    end!: Date;
+    end!: string;
 }
