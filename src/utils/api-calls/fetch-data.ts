@@ -1,4 +1,6 @@
-export const allOutageData = [
+import { OutageDto, SiteInfoDto } from '../dtos';
+
+export const allOutageData: OutageDto[] = [
     {
         id: '0291a763-0152-4218-bf3e-08e7707be50c',
         begin: '2022-12-21T20:09:18.763Z',
@@ -541,7 +543,7 @@ export const allOutageData = [
     },
 ];
 
-export const siteInfoData = [
+export const siteInfoData: SiteInfoDto[] = [
     {
         id: 'kingfisher',
         name: 'KingFisher',
