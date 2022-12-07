@@ -16,7 +16,10 @@ export const fetchSiteInfoData = (siteId: string) => {
     );
 };
 
-export const pushAllOutageInfoForOneSite = (siteId: string, bodyData: any) => {
+export const pushAllOutageInfoForOneSite = (
+    siteId: string,
+    bodyData: any[],
+) => {
     new Promise<any>((resolve, reject) =>
         setTimeout(() => {
             const data = siteInfoData.find((value) => value.id === siteId);
