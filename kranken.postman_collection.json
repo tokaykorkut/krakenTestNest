@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "38535f5d-4522-40c3-8727-255d413575d5",
+		"name": "kranken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9955926"
+	},
+	"item": [
+		{
+			"name": "get -> /outages (real)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.krakenflex.systems/interview-tests-mock-api/v1/outages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"krakenflex",
+						"systems"
+					],
+					"path": [
+						"interview-tests-mock-api",
+						"v1",
+						"outages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get -> /outages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3333/outages",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"outages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post -> /site-outages/:siteId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": \"44c02564-a229-4f51-8ded-cc7bcb202566\",\n        \"name\": \"Partridge\",\n        \"begin\": \"2022-01-01T00:00:00.000Z\",\n        \"end\": \"2022-01-02T12:01:59.123Z\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/site-outages/kingfisher",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"site-outages",
+						"kingfisher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get -> /site-info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "EltgJ5G8m44IzwE6UN2Y4B4NjPW77Zk6FJK3lL23",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3333/site-info/pear-tree",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"site-info",
+						"pear-tree"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
