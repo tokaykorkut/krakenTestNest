@@ -33,9 +33,10 @@ async function bootstrap() {
                 new BadRequestException(errors),
         }),
     );
+
     // * Winston Logger integration
     app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
 
-    await app.listen(process.env.PORT || 3333);
+    await app.listen(process.env.PORT);
 }
 bootstrap();
